@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'g++ -o calculator calculator.cpp'
+                bat 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe" Calculatoro.sln /p:Configuration=Release'
             }
         }
         stage('Test') {
             steps {
-                sh './calculator'
+                bat '"C:\\Users\\Saad\\source\\repos\\Calculatoro\\Debug\\Calculatoro.exe"'
             }
         }
     }
