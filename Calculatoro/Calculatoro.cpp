@@ -7,12 +7,17 @@ int add(int a, int b) {
     return a + b;
 }
 
+int subtract(int a, int b) {
+    return a - b;
+}
+
 
 int main()
 {
-    int result = add(5, 3);
-    std::cout << "Addition result:" << result << std::endl;
-
+    int result1 = add(5, 3);
+    std::cout << "Addition result:" << result1 << std::endl;
+    int result2 = subtract(5, 3);
+    std::cout << "Subtraction result:" << result2 << std::endl;
     return 0;
 }
 
